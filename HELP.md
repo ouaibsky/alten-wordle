@@ -9,6 +9,11 @@
     * Make sure to add JAVA_HOME/bin to your **PATH** environment variable
 * [Intellij Community Edition](https://www.jetbrains.com/fr-fr/idea/download/).
 
+## Import Project into IntelliJ:
+
+* File -> New -> Project From Version Control
+    * paste into URL: https://github.com/ouaibsky/sg-alten-wordle.git
+
 ## Build the project
 
 * open a terminal or Windows powershell (can be also into IntelliJ||Terminal)
