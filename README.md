@@ -1,6 +1,6 @@
 # Societe Generale / Alten - WORDLE Kata
 
-![wordle](img/wordle-a.png =400x400)
+![wordle](img/wordle-a.png)
 
 - [Wordle Rules:](#wordle-rules-)
 - [What is expected from you ?](#what-is-expected-from-you--)
