@@ -1,0 +1,15 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  main:
+    allow-circular-references: true
+
+
+
+  shell:
+    command:
+      script:
+        enabled: false
+      stacktrace:
+        enabled: false
