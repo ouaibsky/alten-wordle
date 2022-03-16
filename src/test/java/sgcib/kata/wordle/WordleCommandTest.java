@@ -43,7 +43,7 @@ public class WordleCommandTest {
             "bbbab,...A.",
             "bbbba,....A",
     })
-    void should_check_hiddden_aaaaa(String word, String response) {
+    void should_check_hidden_aaaaa(String word, String response) {
         var wordle = new WordleCommand("aaaaa");
         assertThat(wordle.check(word)).isEqualTo(response);
     }

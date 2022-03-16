@@ -16,6 +16,6 @@ public class WordleMain {
 
     @Bean
     public PromptProvider myPromptProvider() {
-        return () -> new AttributedString("wordle> ", AttributedStyle.DEFAULT.foreground(AttributedStyle.RED));
+        return () -> new AttributedString("wordle> ", AttributedStyle.DEFAULT.foreground(AttributedStyle.GREEN));
     }
 }

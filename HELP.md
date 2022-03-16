@@ -2,14 +2,16 @@
 
 ## Prerequisites:
 
+* Internet access.
 * Java 17
     * Download it from: https://adoptium.net/
-    * Make sure to add JAVA_DIR/bin to your **PATH** environment variable
-* Intellij Community Edition.
+    * Make sure to define an env variable: JAVA_HOME (JDK_install_dir)
+    * Make sure to add JAVA_HOME/bin to your **PATH** environment variable
+* [Intellij Community Edition](https://www.jetbrains.com/fr-fr/idea/download/).
 
 ## Build the project
 
-* open a terminal or windows powershell (can be also into IntelliJ||Terminal
+* open a terminal or Windows powershell (can be also into IntelliJ||Terminal)
 * run the command:
     * linux/mac
        ```
@@ -17,14 +19,14 @@
        ```
     * windows/powershEll
        ```
-         ./mvnw -DskipTests  
+         .\mvnw -DskipTests  
        ```
     * windows/DOS
        ```
          mvnw -DskipTests  
        ```
 
-    * You should get the file:
+    * You should get a file:
 
   > target/wordle-1.0.0-SNAPSHOT.jar
 

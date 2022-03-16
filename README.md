@@ -52,7 +52,7 @@ Welcome to this kata !
 
 A [template class](src/main/java/sgcib/kata/wordle/WordleCommand.java) is provided to help you to boostrap a project
 
-## Function rules (mapping wordle rukes to something textual)
+## Function rules (mapping wordle rules to something textual)
 
 1. Input of the function is a world, either in uppercase or lowercase.
 2. Return is a string which is always a 5 letters string:
@@ -72,14 +72,16 @@ A [template class](src/main/java/sgcib/kata/wordle/WordleCommand.java) is provid
 ### Hidden: SIREN
 
 Special case:
+
 If the attempt contains letters that is at right place and also wrong place: right place takes the priority:
 
-* providing **AGREE** --> result must be: **..RE..**
+* providing **AGREE** --> result must be: **..RE.**
 * providing **SIEGE** --> result must be: **SIe..** (because there is no second 'E' in SIREN)
 
 ### Hidden: SIEGE
 
 Special case:
+
 If the attempt contains letters that is at right place and also wrong place: right place takes the priority:
 
 * providing **JEWEL** --> result must be: **.e.e.**
