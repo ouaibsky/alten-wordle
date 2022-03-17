@@ -7,7 +7,7 @@
 - [What is not expected !](#what-is-not-expected--)
 - [Constraints.](#constraints)
 - [The outcome function:](#the-outcome-function-)
-- [Function rules (mapping wordle rukes to something textual)](#function-rules--mapping-wordle-rukes-to-something-textual-)
+- [Function rules (mapping wordle rules to something textual)](#function-rules--mapping-wordle-rules-to-something-textual-)
 - [examples.](#examples)
     * [Hidden: ALTEN](#hidden--alten)
     * [Hidden: SIREN](#hidden--siren)
@@ -27,9 +27,11 @@ Welcome to this kata !
 ## What is expected from you ?
 
 1. Provide a working function that check if a 5 letters word is matching a hidden word.
-2. Provide information on how do you ensure your code is working.
+2. Provide information on how do you ensure your code is working (test).
 3. Make sure you code is readable (meaning a new joiner should be able to understand in less than 1mn).
 4. Working in a team, you'll have to explain how you were organized.
+
+The 4 points are equally important.
 
 ## What is not expected !
 
@@ -47,18 +49,18 @@ Welcome to this kata !
 * it's really basic and looks like:
 
 ```java
-   String check(String word);
+   String check(String guess);
 ```
 
-A [template class](src/main/java/sgcib/kata/wordle/WordleCommand.java) is provided to help you to boostrap a project
+A [template class](src/main/java/sgcib/kata/wordle/WordleCommand.java) is provided to help you to boostrap a project.
 
 ## Function rules (mapping wordle rules to something textual)
 
 1. Input of the function is a world, either in uppercase or lowercase.
-2. Return is a string which is always a 5 letters string:
-    1. If a letter is matching **at the right place**, return **this** letter in **uppercase**.
-    2. If a letter is matching **not** at the right place, return **this** letter in **lowercase**.
-    3. Any other cases return a "**.**"
+2. Return is a string which always have 5 letters:
+    1. If a letter is matching **at the right place**, return **this letter** in **uppercase**.
+    2. If a letter is matching **not** at the right place, return **this letter** in **lowercase**.
+    3. Any other cases return a "**.**" (without double quote).
 
 ## examples.
 
@@ -88,8 +90,8 @@ If the attempt contains letters that is at right place and also wrong place: rig
 
 ## Links / help
 
-* [Wordle](https://www.nytimes.com/games/wordle/index.html)
 * :warning: Read the [HELP file](HELP.md) to set up your env.
+* [Wordle](https://www.nytimes.com/games/wordle/index.html)
 * You can organize your teams as you want. here some example:
     * Task identification and attribution (Kanban/scrum/...)
     * Pair Programming
