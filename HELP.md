@@ -1,4 +1,4 @@
-# Societe Generale / Alten / WORDLE
+# Societe Generale / Alten - WORDLE
 
 ## Prerequisites:
 
@@ -62,6 +62,7 @@
     * You should get a prompt, type **help** to check if it works.
 
 ## Run test samples
+:warning: Everything should be red/orange because there is no working implementation.
 
 ### Maven Command Line
 
@@ -71,5 +72,5 @@
 
 * Open the file WordleCommandTest
 * Click the green arrow on the left of the class name.
-*
-![hammer](img/run-tests.png)
+
+  ![hammer](img/run-tests.png)
