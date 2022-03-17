@@ -28,7 +28,7 @@ Welcome to this kata !
 
 1. Provide a working function that check if a 5 letters word is matching a hidden word.
 2. Provide information on how do you ensure your code is working (test).
-3. Make sure you code is readable (meaning a new joiner should be able to understand in less than 1mn).
+3. Make sure your code is readable (meaning a new joiner should be able to understand in less than 1mn).
 4. Working in a team, you'll have to explain how you were organized.
 
 The 4 points are equally important.
