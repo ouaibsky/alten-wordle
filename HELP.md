@@ -60,3 +60,16 @@
   > java -jar target/wordle-1.0.0-SNAPSHOT.jar
 
     * You should get a prompt, type **help** to check if it works.
+
+## Run test samples
+
+### Maven Command Line
+
+    > ./mvnw
+
+### IntelliJ
+
+* Open the file WordleCommandTest
+* Click the green arrow on the left of the class name.
+*
+![hammer](img/run-tests.png)

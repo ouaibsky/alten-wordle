@@ -12,13 +12,11 @@ public class WordleCommandTest {
      */
     @ParameterizedTest
     @CsvSource({
-            "WORDLESSS,WORDLE",
-            "BAR,.....",
-            "WO,WO..???",
+            "bravo,BRAVO",
     })
-    void should_check_worlds_with_wrong_length(String word, String response) {
-        var wordle = new WordleCommand("WORDLE");
-        assertThat(wordle.check(word)).isEqualTo(response);
+    void should_check_good_solution(String guess, String expected) {
+        var wordle = new WordleCommand("BRAVO");
+        assertThat(wordle.check(guess)).isEqualTo(expected);
     }
 
     /**
@@ -26,14 +24,19 @@ public class WordleCommandTest {
      */
     @ParameterizedTest
     @CsvSource({
-            "aaaaa,aaaaa",
-            "bravo,BRAVO",
+            "WORDL,WORDL",
+            "WORDLESSS,WORDL",
+            "BAT,.....",
+            "WO,WO...",
     })
-    void should_check_good_solution(String word, String response) {
-        var wordle = new WordleCommand("WORDLE");
-        assertThat(wordle.check(word)).isEqualTo(response);
+    void should_check_worlds_with_wrong_length(String guess, String expected) {
+        var wordle = new WordleCommand("WORDL");
+        assertThat(wordle.check(guess)).isEqualTo(expected);
     }
 
+    /**
+     * TO BE ENHANCE ... OR NOT
+     */
     @ParameterizedTest
     @CsvSource({
             "bbbbb,.....",
@@ -43,11 +46,14 @@ public class WordleCommandTest {
             "bbbab,...A.",
             "bbbba,....A",
     })
-    void should_check_hidden_aaaaa(String word, String response) {
+    void should_check_hidden_aaaaa(String guess, String expected) {
         var wordle = new WordleCommand("aaaaa");
-        assertThat(wordle.check(word)).isEqualTo(response);
+        assertThat(wordle.check(guess)).isEqualTo(expected);
     }
 
+    /**
+     * TO BE ENHANCE ... OR NOT
+     */
     @ParameterizedTest
     @CsvSource({
             "caccc,.a...",
@@ -55,9 +61,11 @@ public class WordleCommandTest {
             "cccac,...a.",
             "cccca,....a",
     })
-    void should_check_hiddden_abbbb(String word, String response) {
+    void should_check_hiddden_abbbb(String guess, String expected) {
         var wordle = new WordleCommand("abbbb");
-        assertThat(wordle.check(word)).isEqualTo(response);
+        assertThat(wordle.check(guess)).isEqualTo(expected);
     }
+
+    // Other test cases to be added or not !
 
 }

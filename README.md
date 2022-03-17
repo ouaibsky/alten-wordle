@@ -66,7 +66,7 @@ A [template class](src/main/java/sgcib/kata/wordle/WordleCommand.java) is provid
 
 * providing **boost** --> result must be: **....t**
 * providing **alarm** --> result must be: **AL...**
-* providing **alert** --> result must be: **ALe..**
+* providing **alert** --> result must be: **ALe.t**
 * providing **spiro** --> result must be: **.....**
 
 ### Hidden: SIREN
