@@ -35,7 +35,7 @@ Welcome to this kata !
 
 1. A UI to play at wordle.
 2. An Algorithm that find the final solution for a given hidden word.
-3. An algorithm that takes ages to check one proposal against a hidden word. (it should be <1s)
+3. An algorithm that takes ages to check a guess against a hidden word. (it should be < 1s, and usually < 10ms)
 
 ## Constraints.
 
@@ -89,7 +89,7 @@ If the attempt contains letters that is at right place and also wrong place: rig
 ## Links / help
 
 * [Wordle](https://www.nytimes.com/games/wordle/index.html)
-* Read the [HELP file](HELP.md) to set up your env.
+* :warning: Read the [HELP file](HELP.md) to set up your env.
 * You can organize your teams as you want. here some example:
     * Task identification and attribution (Kanban/scrum/...)
     * Pair Programming

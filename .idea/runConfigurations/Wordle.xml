@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Wordle" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="sgcib.kata.wordle.WordleMain" />
-    <module name="alten-wordle" />
+    <module name="sg-alten-wordle" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="sgcib.kata.wordle.*" />
